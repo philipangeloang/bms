@@ -51,8 +51,8 @@ function App() {
 
             <nav className="bg-light-violet border-b-[3px] border-dark-blue | xl:ml-[330px]">
                 <div className="flex justify-between p-4">
-                    <div className="flex items-center"><MenuIcon fontSize="large" /><span className="ml-4 text-3xl font-semibold text invisible | lg:visible">Dashboard</span></div>
-                    <input placeholder="Search Here" type="search" className="bg-white border border-slate-400 rounded-full p-2 | md:w-2/5"  />
+                    <div className="flex items-center"><MenuIcon fontSize="large" /><span className="ml-4 text-3xl font-semibold text invisible absolute | lg:visible lg:relative">Dashboard</span></div>
+                    <input placeholder="Search Here" type="search" className="bg-white border border-slate-400 rounded-full p-2 w-3/5 | md:w-2/5"  />
                     <AccountCircleIcon fontSize="large" />
                 </div>
             </nav>
