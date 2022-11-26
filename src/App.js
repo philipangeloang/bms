@@ -8,7 +8,7 @@ function App() {
 
     const [navBarOpen, setNavBarOpen] = useState(true);
 
-    function navBarClick() {
+    function hamburgerClick() {
     
         setNavBarOpen(prev => {
             return !prev;
@@ -18,8 +18,8 @@ function App() {
     return (
         <div>
             <Sidebar navBarState={navBarOpen} />
-            <Topbar onClick={navBarClick} />
-            <Dashboard />
+            <Topbar navBarState={navBarOpen} onClick={hamburgerClick} />
+            <Dashboard navBarState={navBarOpen} />
         </div>
         
     );

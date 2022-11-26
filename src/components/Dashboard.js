@@ -6,11 +6,13 @@ import { PieChart } from 'react-minimal-pie-chart';
 import CircleIcon from '@mui/icons-material/Circle';
 
 function Dashboard(props) {
+    let navBarState = props.navBarState;
+    
     return(
         <div className="bg-light-gray">
             <div className="text-center mt-4 text-xl font-bold | md:text-2xl | lg:invisible lg:absolute">Dashboard</div>
             
-            <div className="grid m-5 gap-5 grid-cols-1 | md:grid-cols-2 | lg:grid-cols-3 | xl:ml-[350px]">
+            <div className="grid m-5 gap-5 grid-cols-1 | md:grid-cols-2 | lg:grid-cols-3 | xl:ml-[350px]" style={{marginLeft: navBarState ? "" : "90px", transition: "linear 0.2s"}}>
                 <div className="bg-white rounded-lg grid grid-cols-2 grid-rows-4 col-span-2 | md:col-span-1">
                     <span className="row-span-2 text-center self-center">
                             <PeopleAltIcon sx={{fontSize: 100}} />
