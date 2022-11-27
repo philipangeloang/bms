@@ -8,7 +8,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 function Dashboard(props) {
   return (
     <div className="bg-light-gray">
-      <div className="text-center mt-4 text-xl font-bold | md:text-2xl | lg:invisible lg:absolute">
+      <div className="text-center mt-4 text-xl font-bold | md:ml-[70px] md:text-2xl | lg:invisible lg:absolute">
         Dashboard
       </div>
 

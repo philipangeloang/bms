@@ -13,7 +13,7 @@ function Sidebar(props) {
   return (
     <React.Fragment>
       <input type="checkbox" id="navbar-toggle" className="hidden absolute" />
-      <div className="invisible absolute bg-navbar-bg text-white transition-all duration-300 | md:visible md:bg-navbar-bg md:h-screen md:w-[70px] md:fixed | xl:visible xl:bg-navbar-bg xl:h-screen xl:w-[330px] xl:fixed">
+      <div className="opacity-0 invisible absolute bg-navbar-bg text-white | md:opacity-100 md:visible md:bg-navbar-bg md:h-screen md:w-[70px] md:fixed | xl:opacity-100 xl:visible xl:bg-navbar-bg xl:h-screen xl:w-[330px] xl:fixed">
         <div className="flex | md:p-6 md:pb-[3.5rem] | xl:p-6 ease-linear">
           <img
             alt="Barangay Seal"
