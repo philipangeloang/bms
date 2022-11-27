@@ -14,22 +14,25 @@
         visibility: visible;
         height: 100vh;
         width: 330px;
-        position: absolute;
-        transition: all 300ms;
+        top: 0;
+        position: fixed;
+        transition: all ease-in-out 300ms;
     }
 
     #navbar-toggle:checked ~ .bg-light-gray .dashboard {
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     #navbar-toggle:checked ~ nav {
         margin-left: 330px;
+        position: fixed;
+        width: calc(100%-270px);
+        top: 0;
         z-index: 100;
     }
 
     #navbar-toggle:checked + div > div {
         padding: 1.5rem;
-        padding-bottom: 3.5rem;
     }
 
     #navbar-toggle:checked + div img {
@@ -44,6 +47,7 @@
 
     #navbar-toggle:checked + div .list-item-box {
         padding: 1.5rem;
+        height: 70%;
     }
 
     #navbar-toggle:checked + div ul li .icon-text {
@@ -59,6 +63,7 @@
     @media (min-width: 768px) {
         #navbar-toggle:checked + div {
             width: 330px;
+            position: fixed;
         }
     
         #navbar-toggle:checked ~ .bg-light-gray .dashboard {
@@ -67,6 +72,7 @@
     
         #navbar-toggle:checked ~ nav {
             margin-left: 330px;
+            position: static;
         }
     
         #navbar-toggle:checked + div > div {
@@ -86,6 +92,7 @@
     
         #navbar-toggle:checked + div .list-item-box {
             padding: 1.5rem;
+            height: 85%;
         }
     
         #navbar-toggle:checked + div ul li .icon-text {
@@ -105,6 +112,7 @@
     
         #navbar-toggle:checked ~ nav {
             margin-left: 70px;
+            position: static;
         }
     
         #navbar-toggle:checked + div > div {
@@ -124,6 +132,7 @@
     
         #navbar-toggle:checked + div .list-item-box {
             padding: 0;
+            height: 85%;
         }
     
         #navbar-toggle:checked + div ul li .icon-text {

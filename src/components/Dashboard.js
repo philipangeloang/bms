@@ -12,7 +12,7 @@ function Dashboard(props) {
         Dashboard
       </div>
 
-      <div className="dashboard grid m-5 gap-5 grid-cols-1 ml-0 transition-all duration-300 | md:grid-cols-2 md:ml-[90px] | lg:grid-cols-3 | xl:ml-[350px] ">
+      <div className="dashboard grid m-5 gap-5 grid-cols-1 ml-[20px] transition-all duration-300 | md:grid-cols-2 md:ml-[90px] | lg:grid-cols-3 | xl:ml-[350px] ">
         <div className="bg-white rounded-lg grid grid-cols-2 grid-rows-4 col-span-2 | md:col-span-1">
           <span className="row-span-2 text-center self-center">
             <PeopleAltIcon sx={{ fontSize: 100 }} />
