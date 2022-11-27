@@ -32,6 +32,7 @@
     
         #navbar-toggle:checked ~ .bg-light-gray .dashboard {
             margin-left: 20px;
+            margin-top: 80px;
         }
         
     
