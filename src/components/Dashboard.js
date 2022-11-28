@@ -2,8 +2,6 @@ import React from "react";
 import HowToVoteIcon from "@mui/icons-material/HowToVote";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import ElderlyIcon from "@mui/icons-material/Elderly";
-import { PieChart } from "react-minimal-pie-chart";
-import CircleIcon from "@mui/icons-material/Circle";
 
 function Dashboard(props) {
   return (
@@ -12,99 +10,64 @@ function Dashboard(props) {
         Dashboard
       </div>
 
-      <div className="dashboard grid m-5 gap-5 grid-cols-1 ml-[20px] transition-all duration-300 | md:grid-cols-2 md:ml-[90px] | lg:grid-cols-3 | xl:ml-[350px] ">
-        <div className="bg-white rounded-lg grid grid-cols-2 grid-rows-4 col-span-2 | md:col-span-1">
-          <span className="row-span-2 text-center self-center">
-            <PeopleAltIcon sx={{ fontSize: 100 }} />
-          </span>
-          <span className="text-center self-center font-medium text-lg">
-            Population
-          </span>
-          <span className="row-span-3">
-            <PieChart
-              radius={40}
-              labelStyle={{ fontSize: "0.7rem", color: "white" }}
-              label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
-              data={[
-                { title: "Male", value: 600, color: "#033AA9" },
-                { title: "Female", value: 500, color: "#CF1429" },
-              ]}
-            />
-          </span>
-          <span className="row-span-2 text-left self-center ml-8">
+      <div className="dashboard grid m-5 gap-5 grid-cols-1 | md:ml-[90px] md:grid-cols-2 | xl:ml-[350px] xl:grid-cols-3">
+        <div className="bg-white flex-col px-10 py-2 rounded-2xl">
+          <div className="flex justify-between">
             <div>
-              <CircleIcon sx={{ color: "#033AA9" }} fontSize="small" />
-              Male
+              <PeopleAltIcon sx={{ fontSize: 80 }} />
             </div>
-            <div>
-              <CircleIcon sx={{ color: "#CF1429" }} fontSize="small" />
-              Female
+            <div className="self-center font-medium text-xl">Population</div>
+          </div>
+          <div>
+            <div className="w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
+              Male : 45
             </div>
-          </span>
+            <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              Female : 400
+            </div>
+          </div>
         </div>
 
-        <div className="bg-white rounded-lg grid grid-cols-2 grid-rows-4 col-span-2 | md:col-span-1">
-          <span className="row-span-2 text-center self-center">
-            <HowToVoteIcon sx={{ fontSize: 100 }} />
-          </span>
-          <span className="text-center self-center font-medium text-lg">
-            Voters vs Non-Voters
-          </span>
-          <span className="row-span-3">
-            <PieChart
-              radius={40}
-              labelStyle={{ fontSize: "0.7rem", color: "white" }}
-              label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
-              data={[
-                { title: "Voter", value: 800, color: "#033AA9" },
-                { title: "Non-Voter", value: 300, color: "#CF1429" },
-              ]}
-            />
-          </span>
-          <span className="row-span-2 text-left self-center ml-8">
+        <div className="bg-white flex-col px-10 py-2 rounded-2xl">
+          <div className="flex justify-between">
             <div>
-              <CircleIcon sx={{ color: "#033AA9" }} fontSize="small" />
-              Voter
+              <HowToVoteIcon sx={{ fontSize: 80 }} />
             </div>
-            <div>
-              <CircleIcon sx={{ color: "#CF1429" }} fontSize="small" />
-              Non-Voter
+            <div className="self-center font-medium text-xl">
+              Voters vs Non-voters
             </div>
-          </span>
+          </div>
+          <div>
+            <div className="w-[90%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
+              Voters: 45
+            </div>
+            <div className="w-[70%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              Non-voters: 400
+            </div>
+          </div>
         </div>
 
-        <div className="bg-white rounded-lg grid grid-cols-2 grid-rows-4 col-span-2 | md:col-span-2 | lg:col-span-1">
-          <span className="row-span-2 text-center self-center">
-            <ElderlyIcon sx={{ fontSize: 100 }} />
-          </span>
-          <span className="text-center self-center font-medium text-lg">
-            Seniors & PWD
-          </span>
-          <span className="row-span-3">
-            <PieChart
-              radius={40}
-              labelStyle={{ fontSize: "0.7rem", color: "white" }}
-              label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
-              data={[
-                { title: "Senior", value: 300, color: "#CF1429" },
-                { title: "PWD", value: 700, color: "#033AA9" },
-              ]}
-            />
-          </span>
-          <span className="row-span-2 text-left self-center ml-8">
+        <div className="bg-white flex-col px-10 py-2 rounded-2xl">
+          <div className="flex justify-between">
             <div>
-              <CircleIcon sx={{ color: "#033AA9" }} fontSize="small" />
-              Senior
+              <ElderlyIcon sx={{ fontSize: 80 }} />
             </div>
-            <div>
-              <CircleIcon sx={{ color: "#CF1429" }} fontSize="small" />
-              PWD
+            <div className="self-center font-medium text-xl">
+              Seniors and PWD
             </div>
-          </span>
+          </div>
+          <div>
+            <div className="w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
+              Seniors : 45
+            </div>
+            <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              PWD : 400
+            </div>
+          </div>
         </div>
 
-        <div className="bg-white rounded-lg p-6 col-span-2 | lg:col-span-1">
-          <h3 className="text-center font-medium text-lg mb-2">
+        <div className="bg-white flex-col px-10 py-2 rounded-2xl">
+          <h3 className="text-center font-medium text-xl mb-2">
             Barangay Officials
           </h3>
 
@@ -128,36 +91,6 @@ function Dashboard(props) {
 
           <h5 className="font-medium text-sm leading-6">Secretary</h5>
           <p className="text-center text-sm leading-6">Regina Esber</p>
-        </div>
-
-        <div className="bg-white rounded-lg p-6 col-span-2">
-          <h3 className="text-center font-medium text-lg mb-2">
-            Document Request
-          </h3>
-
-          <div className="bg-light-violet shadow-md p-3 mb-4">
-            <p className="text-sm text-slate-300 mb-5">
-              Request Sent: 11/11/22
-            </p>
-            <h2 className="text-xl font-bold">Barangay Certificate</h2>
-            <h4 className="mb-7">Recipient: Eric James Espino</h4>
-          </div>
-
-          <div className="bg-light-violet shadow-md p-3 mb-4">
-            <p className="text-sm text-slate-300 mb-5">
-              Request Sent: 11/11/22
-            </p>
-            <h2 className="text-xl font-bold">Barangay Certificate</h2>
-            <h4 className="mb-7">Recipient: Eric James Espino</h4>
-          </div>
-
-          <div className="bg-light-violet shadow-md p-3 mb-4">
-            <p className="text-sm text-slate-300 mb-5">
-              Request Sent: 11/11/22
-            </p>
-            <h2 className="text-xl font-bold">Barangay Certificate</h2>
-            <h4 className="mb-7">Recipient: Eric James Espino</h4>
-          </div>
         </div>
       </div>
     </div>

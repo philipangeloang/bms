@@ -74,6 +74,10 @@
         #navbar-toggle:checked ~ .bg-light-gray .dashboard {
             margin-left: 350px;
         }
+        
+        #navbar-toggle:checked ~ .document {
+            margin-left: 0;
+        }
 
         #navbar-toggle:checked ~ .bg-light-gray > div {
             margin-left: 330px;
@@ -118,6 +122,10 @@
     
         #navbar-toggle:checked ~ .bg-light-gray .dashboard {
             margin-left: 90px;
+        }
+
+        #navbar-toggle:checked ~ .document {
+            margin-left: -260px;
         }
     
         #navbar-toggle:checked ~ nav {
