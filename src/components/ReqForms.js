@@ -7,7 +7,7 @@ function ReqForms(props) {
         <div className="bg-dark-blue text-white rounded-t-2xl py-2 px-4">
           Resident Information
         </div>
-        <div>
+        <div className="shadow-lg">
           <div className="md:flex md:w-full">
             <div className="px-4 pt-2 | md:w-full">
               <label className="text-sm">First Name</label> <br />
