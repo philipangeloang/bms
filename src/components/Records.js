@@ -21,7 +21,7 @@ function Records(props) {
       </div>
 
       <div className="p-4 text-sm | lg:text-lg">
-        <table className="text-center shadow-lg rounded-2xl bg-dark-blue mx-auto | md:w-full transition-all duration-300">
+        <table className="text-center shadow-lg rounded-2xl bg-dark-blue mx-auto w-full | md:w-full transition-all duration-300">
           <thead className="text-white">
             <td>Last Name</td>
             <td className="p-4 invisible absolute | md:visible md:static">

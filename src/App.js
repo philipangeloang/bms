@@ -13,7 +13,7 @@ function App() {
     <div>
       <Sidebar />
       <Topbar />
-      <Settings />
+      <Logs />
     </div>
   );
 }

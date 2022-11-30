@@ -24,7 +24,7 @@ function Documents(props) {
       </div>
 
       <div className="p-4 text-sm | lg:text-lg">
-        <table className="text-center shadow-lg rounded-2xl bg-dark-blue mx-auto | md:w-full transition-all duration-300">
+        <table className="text-center shadow-lg rounded-2xl bg-dark-blue mx-auto w-full | md:w-full transition-all duration-300">
           <tr>
             <td className="bg-[#d6d5da]">
               <input type="checkbox" className="lg:h-5 lg:w-5 align-middle" />
