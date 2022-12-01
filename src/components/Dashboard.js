@@ -72,10 +72,10 @@ function Dashboard(props) {
             </div>
             <div className="font-medium text-xl w-full">
               Population
-              <div className="w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
+              <div className="card w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl ">
                 45
               </div>
-              <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
                 400
               </div>
             </div>
@@ -97,10 +97,10 @@ function Dashboard(props) {
             </div>
             <div className="font-medium text-xl w-full">
               Voters vs Non-voters
-              <div className="w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
+              <div className="card w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
                 45
               </div>
-              <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
                 400
               </div>
             </div>
@@ -122,10 +122,10 @@ function Dashboard(props) {
             </div>
             <div className="font-medium text-xl w-full">
               Seniors and PWD
-              <div className="w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
+              <div className="card w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
                 45
               </div>
-              <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
                 400
               </div>
             </div>
@@ -213,7 +213,7 @@ function Dashboard(props) {
             Age & Gender Graph
           </h1>
           <div className="grid grid-cols-4">
-            <div className="col-span-4 | md:col-span-3">
+            <div className="col-span-4 | md:col-span-3 relative z-0">
               <ResponsiveContainer width="100%" height={250}>
                 <BarChart width={700} height={500} data={barData}>
                   <XAxis dataKey="name" />
@@ -250,7 +250,7 @@ function Dashboard(props) {
             Educational Attainment
           </h1>
           <div className="grid grid-cols-4">
-            <div className="col-span-4 | md:col-span-2">
+            <div className="col-span-4 | md:col-span-2 relative z-0">
               <ResponsiveContainer width="100%" height={250}>
                 <PieChart width={730} height={250}>
                   <Pie
