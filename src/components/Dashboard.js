@@ -72,10 +72,10 @@ function Dashboard(props) {
             </div>
             <div className="font-medium text-xl w-full">
               Population
-              <div className="card w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl ">
+              <div className="card w-[50%] bg-[#033AA9] text-white p-2 ">
                 45
               </div>
-              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1">
                 400
               </div>
             </div>
@@ -97,10 +97,8 @@ function Dashboard(props) {
             </div>
             <div className="font-medium text-xl w-full">
               Voters vs Non-voters
-              <div className="card w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
-                45
-              </div>
-              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              <div className="card w-[50%] bg-[#033AA9] text-white p-2">45</div>
+              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1">
                 400
               </div>
             </div>
@@ -122,10 +120,8 @@ function Dashboard(props) {
             </div>
             <div className="font-medium text-xl w-full">
               Seniors and PWD
-              <div className="card w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
-                45
-              </div>
-              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+              <div className="card w-[50%] bg-[#033AA9] text-white p-2">45</div>
+              <div className="card w-[80%] bg-[#CF1429] text-white p-2 mt-1">
                 400
               </div>
             </div>
@@ -201,7 +197,12 @@ function Dashboard(props) {
 
         <div className="bg-white flex-col p-4 rounded-2xl col-span-1 | md:col-span-2">
           <div className="flex flex-row justify-between">
-            <h3 className="font-bold text-xl mb-2">Report</h3>
+            <h3 className="font-bold text-xl mb-2">
+              Report
+              <span className="text-sm text-slate-500 font-light">
+                (1st Time Job Seeker)
+              </span>
+            </h3>
             <p>
               This Month
               <span>
@@ -209,9 +210,15 @@ function Dashboard(props) {
               </span>
             </p>
           </div>
-          <h1 className="text-center font-bold text-xl mt-5">
-            Age & Gender Graph
-          </h1>
+          <div>
+            <h1 className="text-center font-bold text-xl mt-5">
+              Number of Requests <span className="text-red-500">7000</span>
+            </h1>
+            <h1 className="text-center font-bold text-xl mt-5">
+              Age & Gender Graph
+            </h1>
+          </div>
+
           <div className="grid grid-cols-4">
             <div className="col-span-4 | md:col-span-3 relative z-0">
               <ResponsiveContainer width="100%" height={250}>
@@ -229,10 +236,8 @@ function Dashboard(props) {
                 <p className="text-center font-bold text-xl invisible absolute | md:visible md:static">
                   Gender
                 </p>
-                <div className="w-[50%] bg-[#033AA9] text-white p-2 rounded-r-2xl">
-                  45
-                </div>
-                <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1 rounded-r-2xl">
+                <div className="w-[50%] bg-[#033AA9] text-white p-2">45</div>
+                <div className="w-[80%] bg-[#CF1429] text-white p-2 mt-1">
                   400
                 </div>
               </div>
